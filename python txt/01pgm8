@@ -1,0 +1,16 @@
+DATE
+(C01) 8. Get a string from an input string where all occurrences of first character replaced with ‘$’, except first character.
+         [eg: onion -> oni$n]
+
+PROGRAM
+l=input("Enter a String : ")
+f=l[0]
+l1=l[1:].replace(f,'$')
+print("New String : ",f+l1)
+
+OUTPUT
+Enter a String : malayalam
+New String :  malayala$
+
+Enter a String : tomato
+New String :  toma$o

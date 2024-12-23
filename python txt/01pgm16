@@ -1,0 +1,20 @@
+DATE
+(C01) 16. Create a single string separated with space from two strings by swapping the character at position 1.
+
+PROGRAM
+s1=input("Enter String 1 :")
+s2=input("Enter String 2 :")
+new1=s1[0]+s2[1]+s1[2:]
+new2=s2[0]+s1[1]+s2[2:]
+print("S1 After Swap : ",new1,"\nS2 After Swap : ",new2)
+
+OUTPUT
+Enter String 1 :mango
+Enter String 2 :orange
+S1 After Swap :  mrngo 
+S2 After Swap :  oaange
+
+Enter String 1 :drive
+Enter String 2 :vehicle
+S1 After Swap :  deive 
+S2 After Swap :  vrhicle

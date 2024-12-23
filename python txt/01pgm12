@@ -1,0 +1,15 @@
+DATE
+(C01) 12. Accept a file name from user and print extension of that.
+
+PROGRAM
+file=input("Enter File Name : ")
+temp=file.split(".")
+ext= temp[-1] if len(temp) > 1 else ""
+print("Extension : ",ext)
+
+OUTPUT
+Enter File Name : file.txt
+Extension :  txt
+
+Enter File Name : img.jpg
+Extension :  jpg

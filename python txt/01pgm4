@@ -1,0 +1,26 @@
+DATE
+(C01) 4. Count the occurrences of each word in a line of text.
+
+PROGRAM
+l=input("Enter a line : ")
+words = l.split()
+res = {}
+for word in words:
+    word = word.lower() 
+    if word in res:
+        res[word] += 1
+    else:
+        res[word] = 1
+for word, count in res.items():
+    print(f"'{word}': {count}")
+
+OUTPUT
+Enter a line : apple orange banana apple
+'apple': 2
+'orange': 1
+'banana': 1
+
+Enter a line : banana orange banana orange mango
+'banana': 2
+'orange': 2
+'mango': 1

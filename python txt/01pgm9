@@ -1,0 +1,16 @@
+DATE
+(C01) 9. Create a string from given string where first and last characters exchanged.  
+         [eg: python -> nythop]
+
+PROGRAM
+s=input("Enter a String : ")
+f=s[0]
+l=s[-1:]
+print("New String : ",l+s[1:-1]+f)
+
+OUTPUT
+Enter a String : welcome
+New String :  eelcomw
+
+Enter a String : update
+New String :  epdatu

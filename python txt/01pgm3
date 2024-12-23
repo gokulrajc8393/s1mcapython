@@ -1,0 +1,91 @@
+DATE
+(C01) 3.(a).Generate positive list of numbers from a given list of integers.
+        (b).Square of N numbers.
+        (c).Form a list of vowels selected from a given word.
+        (d).List ordinal value of each element of a word (Hint: use ord() to get ordinal values)
+
+(a).Generate positive list of numbers from a given list of integers
+
+PROGRAM
+l=input("enter list of integers seperated by spaces ")
+l1=[int(num) for num in l.split()]
+pl=[num for num in l1 if num>0]
+print("list of positive numbers are ",pl)
+
+OUTPUT
+enter list of integers seperated by spaces 2 4 5 -9 8 -10 4
+list of positive numbers are  [2, 4, 5, 8, 4]
+
+enter list of integers seperated by spaces 10 5 -8 2 -7 9
+list of positive numbers are  [10, 5, 2, 9]
+
+(b).Square of N numbers
+
+PROGRAM
+l=input("enter list of integers seperated by spaces ")
+l1=[int(num) for num in l.split()]
+print(l1)
+print("square of numbers")
+l2=[(num*num) for num in l1]
+print(l2)
+
+OUTPUT
+enter list of integers seperated by spaces 2 4 6 8 10
+[2, 4, 6, 8, 10]
+square of numbers
+[4, 16, 36, 64, 100]
+
+enter list of integers seperated by spaces 1 3 5 6 9
+[1, 3, 5, 6, 9]
+square of numbers
+[1, 9, 25, 36, 81]
+
+(c).Form a list of vowels selected from a given word
+
+PROGRAM
+l=input("enter a word ")
+l1=[x for x in l]
+print(l1)
+print("vowels")
+l2=["a","e","i","o","u","A","E","I","O","U"]
+l3=[x for x in l1 if x in l2]
+print(l3)
+
+OUTPUT
+enter a word occurrences 
+['o', 'c', 'c', 'u', 'r', 'r', 'e', 'n', 'c', 'e', 's']
+vowels
+['o', 'u', 'e', 'e']
+
+enter a word malayalam
+['m', 'a', 'l', 'a', 'y', 'a', 'l', 'a', 'm']
+vowels
+['a', 'a', 'a', 'a']
+
+(d).List ordinal value of each element of a word (Hint: use ord() to get ordinal values)
+
+PROGRAM
+word=input("Enter a word : ")
+ordinal_values = [ord(char) for char in word]
+print(f"The ordinal values of the characters in the word '{word}' are: {ordinal_values}")
+
+OUTPUT
+Enter a word : apple
+The ordinal values of the characters in the word 'apple' are: [97, 112, 112, 108, 101]
+
+
+Enter a word : orange
+The ordinal values of the characters in the word 'orange' are: [111, 114, 97, 110, 103, 101]
+
+
+
+
+
+
+
+
+
+
+
+
+

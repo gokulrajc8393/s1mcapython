@@ -1,0 +1,16 @@
+DATE-8 OCT 24
+(CO1) 10.#program to input radius and find area of circle
+PROGRAM
+
+r=int(input("enter radius "))
+a=3.14*r*r
+print("area of circle ",a)
+
+OUTPUT
+enter radius 10
+area of circle  314.0
+
+enter radius 15
+area of circle  706.5
+
+

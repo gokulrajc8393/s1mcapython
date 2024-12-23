@@ -1,0 +1,32 @@
+DATE 1/10/24
+(c01) 11.program to find largest among 3 num 
+a=int(input("enter num 1 "))
+b=int(input("enter num 2 "))
+c=int(input("enter num 3 "))
+if a > b and a > c:
+  print(a ,"is greater")
+elif b > a and b > c:
+  print(b ,"is greater")
+elif c > a and c > b:
+  print(c ,"is greater")
+else:
+  print("all are equal")
+
+OUTPUT
+enter num 1 24
+enter num 2 12
+enter num 3 10
+24 is greater
+
+enter num 1 30
+enter num 2 48
+enter num 3 20
+48 is greater
+
+enter num 1 20
+enter num 2 11
+enter num 3 50
+50 is greater
+
+
+

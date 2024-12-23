@@ -1,0 +1,18 @@
+DATE-8/10/24
+(C02) 2.Generate Fibonacci series of N terms
+
+PROGRAM
+n = int(input("Enter the number of terms: "))
+a, b = 0, 1
+fibonacci_series = []
+for i in range(n):
+    fibonacci_series.append(a)
+    a, b = b, a + b
+print(f"Fibonacci series of {n} terms: {fibonacci_series}")
+
+OUTPUT
+Enter the number of terms: 5
+Fibonacci series of 5 terms: [0, 1, 1, 2, 3]
+
+Enter the number of terms: 10
+Fibonacci series of 10 terms: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]

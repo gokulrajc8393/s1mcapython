@@ -1,0 +1,30 @@
+DATE: 28/11/24
+(C05) 3.Write a Python program to read each row from a given csv file and print a list of strings.
+
+PROGRAM
+with open("student.csv",mode="r") as file:
+  csvr=csv.reader(file)
+  print("all rows")
+  for row in csvr:
+    print(row)
+  print()
+
+student.csv
+rollno	name	age	course
+101	gokul	21	bca
+102	basil	21	bca
+103	jerin	21	bca
+104	eldho	21	bca
+105	thomas	21	bca
+106	vishnu	21	bca
+
+OUTPUT
+all rows
+['rollno', 'name', 'age', 'course']
+['101', 'gokul', '21', 'bca']
+['102', 'basil', '21', 'bca']
+['103', 'jerin', '21', 'bca']
+['104', 'eldho', '21', 'bca']
+['105', 'thomas', '21', 'bca']
+['106', 'vishnu', '21', 'bca']
+

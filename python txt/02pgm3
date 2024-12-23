@@ -1,0 +1,13 @@
+DATE-8/10/24
+(C02) 3.Find the sum of all items in a list
+
+PROGRAM
+l=[int(i) for i in input("Enter List : ").split()]
+print("Sum : ",sum(l))
+
+OUTPUT
+Enter List : 5 4 7 9 10 6
+Sum :  41
+
+Enter List : 5 10 15 20 25
+Sum :  75

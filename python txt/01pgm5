@@ -1,0 +1,27 @@
+DATE
+(C01) 5.Prompt the user for a list of integers. For all values greater than 100, store ‘over’ instead.
+
+PROGRAM
+u=input("enter list of integers seperated by spaces ")
+numbers=u.split()
+#numbers=[int(num) for num in u.split()]
+result=[]
+for num in numbers:
+  numbers=int(num)
+  if numbers > 100:
+    result.append("over")
+  else:
+    result.append(numbers)
+print("new list")
+print(result)
+
+OUTPUT
+enter list of integers seperated by spaces 50 20 41 150 8 200 55
+new list
+[50, 20, 41, 'over', 8, 'over', 55]
+
+enter list of integers seperated by spaces 24 30 150 77 160 55 200
+new list
+[24, 30, 'over', 77, 'over', 55, 'over']
+
+

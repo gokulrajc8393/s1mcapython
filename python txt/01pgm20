@@ -1,0 +1,18 @@
+DATE
+(C01)  20.From a list of integers, create a list removing even numbers.
+
+PROGRAM
+ol=[int(i) for i in input("enter the integers ").split()]
+print("list before ",ol)
+newlist=[i for i in ol if i%2!=0]
+print("list after removing even numbers ",newlist)
+
+OUTPUT
+enter the integers 3 5 8 9 10 4 88
+list before  [3, 5, 8, 9, 10, 4, 88]
+list after removing even numbers  [3, 5, 9]
+
+enter the integers 9 7 8 11 4 77 16 5
+list before  [9, 7, 8, 11, 4, 77, 16, 5]
+list after removing even numbers  [9, 7, 11, 77, 5]
+

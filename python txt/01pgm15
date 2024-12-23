@@ -1,0 +1,18 @@
+DATE
+(C01) 15.Print out all colors from color-list1 not contained in color-list2.
+
+PROGRAM
+list1=[i for i in input("enter the colors in list1: ").split()]
+list2=[i for i in input("enter the colors in list2: ").split()]
+result=[i for i in list1 if i not in list2]
+print("colors in list1 not in list2 ",result)
+
+OUTPUT
+enter the colors in list1: orange apple pineapple blueberry grapes
+enter the colors in list2: apple orange banana
+colors in list1 not in list2  ['pineapple', 'blueberry', 'grapes']
+
+enter the colors in list1: black blue yellow orange
+enter the colors in list2: yellow pink orange
+colors in list1 not in list2  ['black', 'blue']
+

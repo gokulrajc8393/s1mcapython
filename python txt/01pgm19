@@ -1,0 +1,18 @@
+DATE
+(C01)  19.Find gcd of 2 numbers.
+
+PROGRAM
+import math
+x=int(input("enter num1 "))
+y=int(input("enter num2 "))
+print("gcd is ",math.gcd(x,y))
+
+OUTPUT
+enter num1 10
+enter num2 25
+gcd is  5
+
+enter num1 18
+enter num2 9
+gcd is  9
+

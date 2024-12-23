@@ -1,0 +1,11 @@
+#Accept a list of words and return length of longest word.
+PROGRAM
+s=[i for i in input("Enter some words :").split()]
+print(len(max(s, key=len)))
+
+OUTPUT
+Enter some words :programming language
+11
+
+Enter some words :user input
+5
