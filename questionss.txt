@@ -1,0 +1,15 @@
+1.create a dictionary including roll,name,course,age .display details and length of dictionary
+2.write a python program to concatenate dictioanry to create a new one
+  dictnry1 ={"name","age"}
+  dictnry2={"city","gender"}
+3.write a python pgm to check whether a given key already exist in dictionary
+   dictnry={"name","age"}
+4.create dictioanry of 5 countries and their capitals.write a fnct to take country and return its capital
+5.create dictionary car with key brand,model,year and print the values.
+6.create two dictionary .write pgm that replace values in first dictioanry with values from second dictioanry
+7.create dictionry ordered student and write pgm to insert item in begining of dictioanry and end of dictionary
+8.create a dictionary by extracting keys from given dictioanry
+  dictnry={name,age,salary,city}
+  keys name,salary
+9.create two dictioanry and merge it as single dictnry
+10.write a pgm to create a dict with name,rollno and sort using key

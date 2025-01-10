@@ -1,8 +1,7 @@
-DATE: 28/11/24
-(C05) 5.Write a Python program to write a Python dictionary to a csv file. After writing the CSV file
-read the CSV file and display the content.
+#(C05) 5.Write a Python program to write a Python dictionary to a csv file. After writing the CSV file
+# read the CSV file and display the content.
 
-PROGRAM
+
 dicteg=[{"roll no":11,"name":"gokul","branch":"mca","age":21},
         {"roll no":12,"name":"abhijith","branch":"mca","age":22},
         {"roll no":13,"name":"adwaith","branch":"mca","age":22},
@@ -21,24 +20,7 @@ with open(filename,mode="r") as file:
   for x in csvr:
     print(x)
 
-dictegfile.csv
-roll no	name	branch	age
-101	gokul	bca	21
-102	eldho	bca	21
-103	basil	bca	21
-104	jerin	bca	21
-105	thomas	bca	21
-106	vishnu	bca	21
 
-
-OUTPUT
-['roll no', 'name', 'branch', 'age']
-['101', 'gokul', 'bca', '21']
-['102', 'eldho', 'bca', '21']
-['103', 'basil', 'bca', '21']
-['104', 'jerin', 'bca', '21']
-['105', 'thomas', 'bca', '21']
-['106', 'vishnu', 'bca', '21']
 
 
 
