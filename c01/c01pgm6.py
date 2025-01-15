@@ -1,6 +1,5 @@
 #(C01) 6. Store a list of first names. Count the occurrences of ‘a’ within the list
 
-PROGRAM
 import math
 l=[i for i in input("Enter List : ").split()]
 count=0

@@ -2,27 +2,17 @@
 
 import math
 
-def is_all_digits_even(num):
-    while num > 0:
-        digit = num % 10
-        if digit % 2 != 0:
-            return False
-        num //= 10
-    return True
+# Function to check if all digits of a number are even
+def all_even_digits(num):
+    return all(int(digit) % 2 == 0 for digit in str(num))
 
-def even_digit_perfect_squares(start, end):
-    even_digit_squares = []
-    for num in range(start, end + 1):
-        if num >= 1000 and num <= 9999 and is_all_digits_even(num):
-            root = int(math.sqrt(num))
-            if root * root == num:
-                even_digit_squares.append(num)
-    return even_digit_squares
+# Generate four-digit perfect square numbers with all even digits
+result = []
 
+for num in range(1000, 10000):
+    if math.isqrt(num)**2 == num and all_even_digits(num):
+        result.append(num)
 
-start = 1000
-end = 9999
+print(result)
 
-even_digit_squares = even_digit_perfect_squares(start, end)
-print(even_digit_squares)
 
